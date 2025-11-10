@@ -4,9 +4,6 @@ A clean, interactive *Power BI* dashboard to analyze sales performance across *C
 
 ---
 
-## 🖼️ Preview
-![Dashboard Screenshot](./assets/business-sales-dashboard.png) <!-- replace with your path -->
-
 ---
 
 ## ✨ Highlights (KPIs)
@@ -49,4 +46,9 @@ VAR _sales = [Total Sales]
 RETURN IF(_sales = 0, BLANK(), DIVIDE([Total Profit], _sales))
 
 Top N Sales (Products) = 
-CALCULATE([Total Sales], TOPN(10, ALL('Products'[Product Name]), [Total Sales], DESC))# FUTURE_DS_01
+CALCULATE([Total Sales], TOPN(10, ALL('Products'[Product Name]), [Total Sales], DESC))
+
+
+
+
+
