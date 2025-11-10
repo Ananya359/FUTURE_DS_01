@@ -31,6 +31,15 @@ A clean, interactive *Power BI* dashboard to analyze sales performance across *C
 - DAX (measures & KPIs)
 - Excel/CSV as data source
 
+## 🧠 Skills & Tools Demonstrated  
+
+- *Data Cleaning & Transformation:* Power Query  
+- *Data Modeling:* Relationships, Data Types, Hierarchies  
+- *DAX Formulas:* Calculated Columns, Measures, Aggregations  
+- *Power BI Visualizations:* Bar, Pie, Donut, and KPI Cards  
+- *Dashboard Design:* Consistency, Interactivity, and Storytelling  
+- *Business Insights:* Regional, Category & Segment-wise Analysis
+
 ## 🧮 DAX Measures (Core)
 ```DAX
 Total Sales = SUM(Sales[Sales])
@@ -47,6 +56,7 @@ RETURN IF(_sales = 0, BLANK(), DIVIDE([Total Profit], _sales))
 
 Top N Sales (Products) = 
 CALCULATE([Total Sales], TOPN(10, ALL('Products'[Product Name]), [Total Sales], DESC))
+```DAX
 
 
 
